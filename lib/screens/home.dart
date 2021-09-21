@@ -94,13 +94,20 @@ class _HomeScreenState extends State<HomeScreen> {
                   }
                 });
               },
-              child: Container(
-                child: Text(
-                  "Calculate",
-                  style: TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.bold,
-                    color: accentHexColor,
+              child: Card(
+                color: mainHexColor,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12.0)),
+                elevation: 6.0,
+                child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Text(
+                    "Calculate",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                      color: accentHexColor,
+                    ),
                   ),
                 ),
               ),
